@@ -6,9 +6,9 @@ metadata:
 
 spec: 
    selector: 
-      app: notes-app
+      app: notes-app # Matches Deployment label
    ports: 
     - protocol: TCP
-      port: 8000
-      targetPort: 8000
-   type: ClusterIP
+      port: 8000 # Service port
+      targetPort: 8000 # Container port
+   type: ClusterIP # Internal service
