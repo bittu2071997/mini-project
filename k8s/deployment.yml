@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: notes-app
-        image: bittu1234/notes-app-k8s
+        image: bittu1234/notes-app-k8s # DockerHub image
         ports:
-        - containerPort: 8000
+        - containerPort: 8000 # Django runs on port 8000
